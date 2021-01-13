@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TVMAT</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Kanit:wght@300&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="glider.min.css">
+</head>
+<body>
+    
+    
+    <div class="wrapper">
+        <div class="mobile-nav">
+            <ul class="menu-items">
+                <li>
+                    <a href="#about">ODKRYJ</a>
+                </li>
+                <li>
+                    <a href="#shop">ZAMÓW</a>
+                </li>
+                <li>
+                    <a href="#kontakt">KONTAKT</a>
+                </li>
+            </ul>
+        </div>
+    <nav id="top" class="desktop-nav">
+    <div class="logo">
+        <a href="#top">
+            <img src="images/Group_1.png" alt="">
+        </a>
+    </div>
+    <div class="menu-icon">
+        <img src="images/menu.png" alt="">
+    </div>
+    <ul class="menu-items">
+        <li>
+            <a href="#about">ODKRYJ</a>
+        </li>
+        <li>
+            <a href="#shop">ZAMÓW</a>
+        </li>
+        <li>
+            <a href="#kontakt">KONTAKT</a>
+        </li>
+    </ul>
+</nav>
+
+<!-- End of desktop Navigation -->
+
+<header class="hero-container">
+    <img src="images/TV.svg" alt="">
+</header>
+<!-- End of Hero section -->
+
+<section id="about" class="about-section">
+    <div class="section-content">
+    
+    
+    <div class="about-description">
+        <h2>Używaj w podróży</h2>
+        <p>
+            Dzięki elastycznej budowie ekranu 
+            można go powiesić na siedzeniach 
+            i urządzić sobie kino domowe w 
+            samochodzie.
+        </p>
+    </div>
+        <img src="images/car_1.svg" alt="">
+    
+    </div>
+    <div class="section-content">
+        <div class="reverse">
+    <img src="images/mata_1.svg" alt="">
+        </div>
+    <div class="about-description">
+        
+        <h2>Łatwe przechowanie</h2>
+        <p>
+            Mata projekcyjna dzięki swojej giętkości 
+            może być zwijana w rulon przez co 
+            zajmuje bardzo mało miejsca mimo 
+            dużych rozmiarów po rozłożeniu.
+        </p>
+        
+    </div>
+    <div class="mobile">
+    <img src="images/mata_1.svg" alt="">
+
+    </div>
+    </div>
+    <div class="section-content">
+    
+    
+    <div class="about-description">
+        <h2>Pojemna bateria</h2>
+        <p>
+            Wysokiej jakości akumulatory pozwalają 
+            nawet do 10 godzin oglądania bez 
+            potrzeby ładowania.
+        </p>
+    </div>
+    <div class="bat">
+        <img src="images/battery_1.svg" alt="">
+    </div>
+    </div>
+</section>
+<!-- End of about us section -->
+
+<section id="shop" class="shoping section">
+    <div class="wrapper">
+        <h3>Dostępne Wersje</h3>
+        <div class="wersje-container">
+            <div class="wersje">
+                <div class="wersja">
+                    <div class="slide-container">
+                        <img src="images/10.png" alt=""><br>
+                        <a href="#" class="btn">499,99zł</a>
+                    </div>
+                </div>
+                    <div class="wersja">
+                        <div class="slide-container">
+                            <img src="images/24.png" alt=""><br>
+                            <a href="#" class="btn">999,99zł</a>
+                        </div>
+                    </div>
+                    <div class="wersja">
+                        <div class="slide-container">
+                            <img src="images/40.png" alt=""><br>
+                            <a href="#" class="btn">1999,99zł</a>
+                        </div>
+                    </div>
+                    <div class="wersja">
+                        <div class="slide-container">
+                            <img src="images/70.png" alt=""><br>
+                            <a href="#" class="btn">3999,99zł</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <span class="slider-prev">
+                <img src="images/back_1.png" alt="">
+            </span>
+
+            <span class="slider-next">
+                <img src="images/next_1.png" alt="">
+            </span>
+
+    </div>
+</section>
+<!-- End of Shopping Section -->
+<footer>
+    <div class="wrapper">
+        <h4>
+            KONTAKT
+        </h4>
+        <div id="kontakt" class="kontakt">
+        Email: TVMat@tv.pl <br>
+        Tel: +48 123 456 789 <br>
+        Żywiec ul. Telewizyjna 123
+        </div>
+    </div>
+</footer>
+<!-- End of the Footer -->
+</div>
+    <script src="glider.min.js"></script>
+    <script>
+        new Glider(document.querySelector(".wersje"),{
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            draggable: true,
+            arrows: {
+                prev: '.slider-prev',
+                next: '.slider-next',
+            },
+        });
+    </script>
+</body>
+</html>
